@@ -22,14 +22,21 @@ export default function ImagesIndex() {
     },[])
 
     return (
-        <div>
-          <h1>Images Index</h1>
-          <div className="grid-container">
-            {data &&
-              data.map((image, index) => (
-                <img key={index} className="grid-item" src={image.url} alt={`image-${index}`} />
-              ))}
+      <div className="container mt-4">
+          <h1 className="mb-4">Images Index</h1>
+          <div className="row">
+              {data &&
+                  data.map((image, index) => (
+                      <div key={index} className="col-md-4 mb-4">
+                          <div className="card">
+                              <img className="card-img-top" src={image.url} alt={`image-${index}`} />
+                              <div className="card-body">
+                                  {/* Add any additional information or styling here */}
+                              </div>
+                          </div>
+                      </div>
+                  ))}
           </div>
-        </div>
-      );
-    }
+      </div>
+  );
+}
