@@ -1,6 +1,7 @@
 import React from 'react';
 import ImageUploadForm from './ImageUploadForm';
 import ImagesIndex from './ImagesIndex';
+import Navbar from './Navbar';
 
 const Home = () => {
   const handleUploadSuccess = () => {

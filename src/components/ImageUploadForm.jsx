@@ -28,6 +28,7 @@ const ImageUploadForm = ({ onUploadSuccess }) => {
         },
       });
       onUploadSuccess();
+      window.location.reload()
     } catch (error) {
       console.error('Error uploading image:', error);
     }

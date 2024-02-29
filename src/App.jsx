@@ -1,13 +1,15 @@
 import 'bootstrap/dist/css/bootstrap.min.css'
+// import "bootswatch/dist/slate/bootstrap.min.css"
 import './App.css';
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import { Container } from 'react-bootstrap'
 import Mainmenu from './components/Mainmenu'
 import Home from './components/Home'
-import ImagesIndex from './components/ImagesIndex'
+import Navbar from './components/Navbar'
 import Login from './components/Login'
 import Logout from "./components/Logout"
 import Signup from "./components/Signup"
+import ImagesIndex from './components/ImagesIndex'
 
 
 function App() {
