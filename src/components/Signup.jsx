@@ -2,30 +2,60 @@ import { Form, Button } from "react-bootstrap";
 import axios from "axios";
 import { useRef } from "react";
 
-export default function Signup() {
-    const userRef = useRef()
-    const emailRef = useRef()
-    const pwdRef = useRef()
-    async function handleSubmit(e) {
-        e.preventDefault();
-        const user = {
-          username: userRef.current.value,
-          email: emailRef.current.value,
-          password: pwdRef.current.value,
-        };
+// export default function Signup() {
+//     const userRef = useRef()
+//     const emailRef = useRef()
+//     const pwdRef = useRef()
+//     async function handleSubmit(e) {
+//         e.preventDefault();
+//         const user = {
+//           username: userRef.current.value,
+//           email: emailRef.current.value,
+//           password: pwdRef.current.value,
+//         };
     
-        const { data } = await axios.post(
-          `${process.env.REACT_APP_BACKEND_URL}/signup/`,
-          user,
-          {
-            headers: { "Content-Type": "application/json" },
-          },
-          {
-            withCredentials: true,
-          }
-        );
-        window.location.href = "/login"
-      }
+//    try {
+//           await axios.post(
+//             `${process.env.REACT_APP_BACKENDURL}/signup/`,
+//             user,
+//           {
+//             headers: { "Content-Type": "application/json" },
+//           },
+//           {
+//             withCredentials: true,
+//           }
+//         );
+//         window.location.href = "/login"
+//       }}
+export default function Signup() {
+  const userRef = useRef()
+  const emailRef = useRef()
+  const pwdRef = useRef()
+  async function handleSubmit(e) {
+    e.preventDefault();
+    const user = {
+      username: userRef.current.value,
+      email: emailRef.current.value,
+      password: pwdRef.current.value,
+    };
+  
+    try {
+      await axios.post(
+        `${process.env.REACT_APP_BACKEND_URL}/signup/`,
+        user,
+        {
+          headers: { "Content-Type": "application/json" },
+        },
+        {
+          withCredentials: true,
+        }
+      );
+      window.location.href = "/login";
+
+    } catch (error) {
+      console.error('Error occurred during signup:', error);
+    }
+  }
   return (
     <Form onSubmit={handleSubmit}>
       <Form.Group>

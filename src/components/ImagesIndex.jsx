@@ -98,7 +98,7 @@ export default function ImagesIndex() {
                     <img
                       className="card-img-top"
                       src={image.url}
-                      alt={`image-${index}`}
+                      alt={`${index}`}
                       onClick={() => handleImageClick(image.url)}
                     />
                     <div className="card-body d-flex justify-content-between">
