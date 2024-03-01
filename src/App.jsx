@@ -10,7 +10,7 @@ import Login from './components/Login'
 import Logout from "./components/Logout"
 import Signup from "./components/Signup"
 import About from './components/About'
-import ImagesIndex from './components/ImagesIndex'
+// import ImagesIndex from './components/ImagesIndex'
 import ImageUploadForm from './components/ImageUploadForm'
 
 
