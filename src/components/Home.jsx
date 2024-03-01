@@ -1,13 +1,15 @@
-import React from 'react';
-import ImageUploadForm from './ImageUploadForm';
-import ImagesIndex from './ImagesIndex';
-import Navbar from './Navbar';
+import React from 'react'
+// import ImageUploadForm from './ImageUploadForm'
+import ImagesIndex from './ImagesIndex'
+// import Navbar from './Navbar'
 
 const Home = () => {
+
+  // eslint-disable-next-line
   const handleUploadSuccess = () => {
     
-    console.log('Image uploaded successfully');
-  };
+    console.log('Image uploaded successfully')
+  }
 
   return (
     <div>
@@ -16,7 +18,7 @@ const Home = () => {
       <hr /> */}
       <ImagesIndex />
     </div>
-  );
-};
+  )
+}
 
-export default Home;
+export default Home
