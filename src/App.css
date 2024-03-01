@@ -1,5 +1,5 @@
-/* @import 'bootstrap/dist/css/bootstrap.min.css';
-@import 'bootswatch/dist/slate/bootstrap.min.css'; */
+@import 'bootstrap/dist/css/bootstrap.min.css';
+@import 'bootswatch/dist/slate/bootstrap.min.css';
 
 .grid-container {
   display: grid;
@@ -94,4 +94,26 @@ input {
 
 .close-btn:hover {
   background-color: #45a049;
+}
+.image-upload-form input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+/* Add styles for the submit button */
+.image-upload-form button {
+  background-color: #4CAF50; /* Change to your desired color */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.image-upload-form button:hover {
+  background-color: #45a049; /* Change to your desired hover color */
 }

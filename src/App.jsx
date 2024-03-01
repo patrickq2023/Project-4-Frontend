@@ -1,5 +1,5 @@
-// import 'bootstrap/dist/css/bootstrap.min.css'
-// import "bootswatch/dist/slate/bootstrap.min.css"
+import 'bootstrap/dist/css/bootstrap.min.css'
+import "bootswatch/dist/slate/bootstrap.min.css"
 import './App.css'
 import React from 'react'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'

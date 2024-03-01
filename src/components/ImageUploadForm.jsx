@@ -5,6 +5,11 @@ const ImageUploadForm = ({ onUploadSuccess }) => {
   const [image, setImage] = useState(null);
   const [keyword, setKeyword] = useState('');
   const [category, setCategory] = useState('');
+  // eslint-disable-next-line
+  const handleUploadSuccess = () => {
+    
+    console.log('Image uploaded successfully')
+  }
 
   const handleImageChange = (e) => {
     const file = e.target.files[0];
@@ -26,7 +31,7 @@ const ImageUploadForm = ({ onUploadSuccess }) => {
           'Content-Type': 'multipart/form-data',
         },
       });
-      onUploadSuccess();
+      handleUploadSuccess();
       window.location.reload()
     } catch (error) {
       console.error('Error uploading image:', error);
@@ -34,7 +39,7 @@ const ImageUploadForm = ({ onUploadSuccess }) => {
   };
 
   return (
-    <form onSubmit={handleSubmit}>
+    <form className="image-upload-form"onSubmit={handleSubmit}>
       <label>
         Image:
         <input type="file" accept="image/*" onChange={handleImageChange} />
@@ -50,7 +55,7 @@ const ImageUploadForm = ({ onUploadSuccess }) => {
         <input type="text" value={category} onChange={(e) => setCategory(e.target.value)} />
       </label>
       <br />
-      <button type="submit">Upload</button>
+      <button type="submit"className='upload-button' >Upload</button>
     </form>
   );
 };

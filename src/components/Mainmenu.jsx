@@ -13,7 +13,7 @@ export default function Mainmenu() {
     }, [isAuth])
   return (
     <Navbar bg='dark' variant='dark'>
-       <Navbar.Brand href='/'>mypix</Navbar.Brand>
+       <Navbar.Brand href='/'>exposure</Navbar.Brand>
        <Nav className="ml-auto">
        <Nav.Link href='/'>Home</Nav.Link>
        <Nav.Link href='/imageUpoad'>Post</Nav.Link>
