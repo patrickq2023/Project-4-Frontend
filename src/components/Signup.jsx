@@ -41,7 +41,7 @@ export default function Signup() {
         <Form.Control type="password" ref={pwdRef} required />
       </Form.Group>
       <div className="mt-2">
-        <Button type="submit" variant="primary">
+        <Button type="submit" variant="success">
           Login
         </Button>
       </div>
