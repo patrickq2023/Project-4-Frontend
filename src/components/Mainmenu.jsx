@@ -15,7 +15,7 @@ export default function Mainmenu() {
     <Navbar bg='dark' variant='dark'>
        <Navbar.Brand href='/'>mypix</Navbar.Brand>
        <Nav className="ml-auto">
-       <Nav.Link href='/home'>Home</Nav.Link>
+       <Nav.Link href='/'>Home</Nav.Link>
        <Nav.Link href='/imageUpoad'>Post</Nav.Link>
        <Nav.Link href='/about'>About</Nav.Link>
 

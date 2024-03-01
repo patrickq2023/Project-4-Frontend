@@ -12,8 +12,8 @@ const Home = () => {
   return (
     <div>
       <h1>Home Page</h1>
-      <ImageUploadForm onUploadSuccess={handleUploadSuccess} />
-      <hr />
+      {/* <ImageUploadForm onUploadSuccess={handleUploadSuccess} />
+      <hr /> */}
       <ImagesIndex />
     </div>
   );

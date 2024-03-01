@@ -11,6 +11,7 @@ import Logout from "./components/Logout"
 import Signup from "./components/Signup"
 import About from './components/About'
 import ImagesIndex from './components/ImagesIndex'
+import ImageUploadForm from './components/ImageUploadForm'
 
 
 function App() {
@@ -25,6 +26,7 @@ function App() {
           <Route path="/logout" element={<Logout />} />
           <Route path="/signup" element={<Signup />} />
           <Route path="/about" element={<About />} />
+          <Route path="/imageUpoad" element={<ImageUploadForm />} />
         </Routes>    
      </Container>
     </BrowserRouter>
